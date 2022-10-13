@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <script src="web.js"></script>
+  <title>SIGNUP PAGE</title>
+  <style>
+    .body {
+      font-family: Lato;
+    }
+
+    .form {
+      width: 65%;
+      margin: auto;
+
+    }
+
+    .input {
+      font-size: 12px;
+      margin-top: 2px;
+      padding: 0px 10px 0px 10px;
+    }
+
+    .label {
+      margin-bottom: 1px;
+      margin-top: 5px;
+      font-size: 14px;
+    }
+
+    .div {
+      margin-bottom: 10px;
+    }
+
+    .image {
+      max-width: 200px;
+      display: block;
+      margin-right: auto;
+      margin-left: auto;
+
+    }
+
+    .button {
+      width: 60%;
+      padding: 1px;
+      margin-top: 5px;
+      display: block;
+    }
+  </style>
+</head>
+
+<body>
+  <h2 style="text-align:center;color: rgb(6, 113, 235);">Signup</h2>
+  <hr>
+  <div class="container-fluid" style="padding:10px ;">
+    <div class="row">
+      <div class="col-sm-9">
+        <form class="form" onsubmit="return validateSignupForm()">
+          <div class="form-group div">
+            <label class="label" for="FirstName">First Name:</label>
+            <input type="text" class="form-control input" placeholder="First Name" id="FirstName" name="firstname"
+              required>
+          </div>
+          <div class="form-group div">
+            <label class="label" for="LastName">Last Name:</label>
+            <input type="text" class="form-control input" placeholder="Last Name" id="LastName" name="lastname">
+          </div>
+          <div class="form-group div">
+            <label class="label" for="DateOfBirth">Date of Birth:</label>
+            <input type="date" class="form-control input" placeholder="dd/mm/yy" id="DateOfBirth" name="dateofBirth"
+              required>
+          </div>
+          <div class="form-group div">
+            <label class="label" for="EmployeeID">Employee ID :</label>
+            <input type="employeeID" class="form-control input" placeholder="Employee ID number" id="EmployeeID"
+              name="employeeID" required>
+          </div>
+
+          <div class="form-group div">
+            <label class="label" for="Email">Email:</label>
+            <input type="email" class="form-control input" id="Email" name="email" required>
+          </div>
+          <div class="form-group div ">
+            <label class="label" for="ProfilePic">Profile Picture:</label>
+            <input type="file" class="form-control-file " id="ProfilePic" name="profilePicFile" required>
+          </div>
+          <div class="form-group div">
+            <label class="label" for="Passwd">Password:</label>
+            <input type="password" class="form-control input" id="Passwd" name="pawd" required>
+          </div>
+          <div class="form-group div ">
+            <label class="label" for="ContactNumber">Contact Number:</label>
+            <input type="text" class="form-control input" id="ContactNumber" name="contactNumber" required>
+          </div>
+          <div class="form-group div ">
+            <label class="label" for="Address">Address:</label>
+            <input type="text" class="form-control input" id="Address" name="address" required>
+          </div>
+          <div class="form-group div">
+            <label class="label" for="Designation">Designation:</label>
+            <select id="Designation" name="designation" class="form-control input">
+              <option value="unassigned"> </option>
+              <option value="Trainee">Trainee</option>
+              <option value="senior Developer">Senior Developer</option>
+              <option value="Solution Architect">Solution Architect</option>
+              <option value="Developer">Developer</option>
+              <option value="Software Engineer">Software Engineer</option>
+              <option value="HR">HR</option>
+              <option value="CEO">CEO</option>
+              <option value="Project Manager">Project Manager</option>
+            </select>
+
+          </div>
+          <div class="form-group div ">
+            <label class="label" for="Link">Link:</label>
+            <input type="url" class="form-control input" id="Link" name="link" required>
+          </div>
+          <div class="form-group div ">
+            <label class="label" for="Languages">Languages:</label><br>
+            <select id="Languages" name="language" class="form-control input">
+              <option value="English">English</option>
+              <option value="Hindi">Hindi</option>
+            </select>
+          </div>
+          <div style="display:block;margin-top:20px;margin-left: auto;margin-right: auto;">
+            <button type="submit" class="btn btn-primary button" style="margin:auto;">Sign Up</button>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-sm-3  pl-0  pr-2">
+        <img src="userprofile.jpg" class="image">
+      </div>
+
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"></script>
+</body>
+
+</html>

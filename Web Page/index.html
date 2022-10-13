@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="icon.svg">
+    <title>PATTERNFLY</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="web.js"></script>
+
+</head>
+
+<body onload="redirect1()">
+
+    <h1>
+        <span class="logo">
+            <img src="icon.svg" alt="patternfly.png">
+        </span>
+        <span> P A T T E R N F L Y </span>
+
+    </h1>
+    <div class="container">
+        <p>
+            <span>
+                This is placeholder text, only. Use this area to place any information or introductory
+            </span>
+            <span>
+                message about our application that may be relevant for users.
+            </span>
+        </p>
+    </div>
+
+    <div class="center">
+        <form action="webpage.html" onsubmit="return verifyUser()">
+
+            <div class="language">
+                <select name="languages" id="language">
+                    <option value="english">English</option>
+                    <option value="hindi">Hindi</option>
+                </select>
+            </div>
+            <div>
+                <h3>Log In to Your Account</h3>
+            </div>
+            <div class="textfield">
+                <input type="text" id="username" name="text" required>
+                <label>Email or phone or username</label>
+            </div>
+            <div class="textfield">
+                <input type="password" id="password" name="pwd" required>
+                <label>Password</label>
+            </div>
+            <span>
+                <input type="checkbox" id="remember">
+                <label class="remember" for="remember">keep me logged in for 30 days</label>
+            </span>
+            <span>
+                <a class="pass" href="#"> Forgot Password?</a>
+            </span>
+            <div class="login">
+                <input type="submit" class="submitButton" value="Log In">
+            </div>
+
+            <div class="newacc">
+                <p><span class="account">Need an account ? </span><span><a class="signup" href="signupForm.html"> Sign
+                            up </a></span>
+                </p>
+
+            </div>
+        </form>
+    </div>
+
+
+    <div class="terms">
+        Terms of use . Help . Privacy Policy
+    </div>
+
+
+
+</body>
+
+</html>
